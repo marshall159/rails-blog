@@ -7,7 +7,7 @@
   <tr>
     <th>Title</th>
     <th>Text</th>
-    <th></th>
+    <th colspan="2"></th>
   </tr>
 
   <% @articles.each do |article| article %>
@@ -15,15 +15,8 @@
       <td><%= article.title %></td>
       <td><%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
     </tr>
   <% end %>
 
-
-
-
 </table>
-
-
-
-
-
